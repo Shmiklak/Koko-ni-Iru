@@ -88,6 +88,6 @@ Config:
 Layers:
   faa91861c6e64f76981c0f4556a4654c:
     Name: ""
-    OsbLayer: Background
+    OsbLayer: Foreground
     DiffSpecific: No
     Visible: Yes

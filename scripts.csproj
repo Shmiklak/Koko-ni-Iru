@@ -53,11 +53,14 @@
   -->
   <ItemGroup>
     <Compile Include="Background.cs" />
+    <Compile Include="Circles.cs" />
+    <Compile Include="Geometry.cs" />
     <Compile Include="Jigoku.cs" />
     <Compile Include="Kokoniiru.cs" />
     <Compile Include="Lyrics.cs" />
     <Compile Include="Particles.cs" />
     <Compile Include="Squares.cs" />
+    <Compile Include="Transition.cs" />
   </ItemGroup>
   <ItemGroup />
 </Project>

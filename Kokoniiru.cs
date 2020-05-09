@@ -34,10 +34,24 @@ namespace StorybrewScripts
             bg.Scale(19138, 1000);
             bg.Fade(19138, 21042, 0, 1);
             bg.Fade(230566, 234376, 1, 0);
+            //Gray
             bg.ColorHsb(19138, 0, 0, 0.35);
+            //Purple
             bg.Color(26042, 0.4, 0.3, 0.7);
+            //Green
             bg.Color(26280, 27709, 1, 1, 1, 0.1, 0.5, 0.2);
+            //Dark blue
             bg.Color(57233, 58185, 0.1, 0.5, 0.2, 0, 0, 0.1);
+            //Blue
+            bg.Color(80090, 81042, 0, 0, 0.1, 0, 0.3, 0.5);
+
+            bg.Color(120090, 121995, 0, 0.3, 0.5, 0.1, 0.1, 0.1);
+
+            bg.Color(135328, 0.5, 0.2, 0.4);
+
+            bg.Color(165804, 166757,  0.5, 0.2, 0.4, 0, 0, 0.1);
+
+            bg.Color(192471, 193423, 0, 0, 0.1, 0.7, 0.4, 0.3);
 
             var overlay = GetLayer("bg").CreateSprite("sb/etc/vig.png", OsbOrigin.Centre);
             overlay.Fade(19138, 21042, 0, 1);

@@ -1,25 +1,25 @@
 ﻿FormatVersion: 6
-Name: "Sky"
-Script: "Particles"
+Name: "Squares 2"
+Script: "Squares"
 Config:
   Path:
     Type: "System.String"
     Value: "sb/etc/p.png"
   StartTime:
     Type: "System.Int32"
-    Value: "57233"
+    Value: "135328"
   EndTime:
     Type: "System.Int32"
-    Value: "80090"
+    Value: "165804"
   ParticleDuration:
     Type: "System.Double"
-    Value: "5000"
+    Value: "1904"
   ParticleAmount:
     Type: "System.Double"
-    Value: "150"
+    Value: "70"
   StartPosition:
     Type: "OpenTK.Vector2"
-    Value: "-107,0"
+    Value: "-107,-50"
   EndPosition:
     Type: "OpenTK.Vector2"
     Value: "747,480"
@@ -28,7 +28,7 @@ Config:
     Value: "True"
   RandomY:
     Type: "System.Boolean"
-    Value: "True"
+    Value: "False"
   Easing:
     Type: "System.Int32"
     Value: "0"
@@ -73,19 +73,19 @@ Config:
     Value: "False"
   FadeInDuration:
     Type: "System.Int32"
-    Value: "500"
+    Value: "200"
   FadeOutDuration:
     Type: "System.Int32"
-    Value: "500"
+    Value: "200"
   Color:
     Type: "OpenTK.Graphics.Color4"
-    Value: "1,1,1,0.6"
+    Value: "1,1,1,0.09803922"
   StartScale:
     Type: "System.Double"
-    Value: "0.5"
+    Value: "25"
   EndScale:
     Type: "System.Double"
-    Value: "1"
+    Value: "75"
   RandomScale:
     Type: "System.Boolean"
     Value: "True"
@@ -116,10 +116,10 @@ Config:
     Value: "True"
   RandomSeed:
     Type: "System.Int32"
-    Value: "0"
+    Value: "69"
     DisplayName: "Random seed"
 Layers:
-  92e3c13c86b54860902c1231866e4fc2:
+  091c4ab25e8d493c8358030d3f02c474:
     Name: ""
     OsbLayer: Background
     DiffSpecific: No
