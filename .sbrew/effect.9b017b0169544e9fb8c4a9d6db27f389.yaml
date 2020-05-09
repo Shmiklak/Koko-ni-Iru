@@ -1,0 +1,19 @@
+﻿FormatVersion: 6
+Name: "Kokoniiru 1"
+Script: "Kokoniiru"
+Config:
+  RandomSeed:
+    Type: "System.Int32"
+    Value: "0"
+    DisplayName: "Random seed"
+Layers:
+  6d6812bc3f7845d1a4d2aa02c50f47b9:
+    Name: "bg"
+    OsbLayer: Background
+    DiffSpecific: No
+    Visible: Yes
+  f9bb93f6ab7b4ab3a28f449c7e92c0f9:
+    Name: "noise"
+    OsbLayer: Background
+    DiffSpecific: No
+    Visible: Yes
