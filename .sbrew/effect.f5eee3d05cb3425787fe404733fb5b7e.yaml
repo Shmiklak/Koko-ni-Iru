@@ -4,7 +4,7 @@ Script: "Geometry"
 Config:
   Story:
     Type: "System.String"
-    Value: "750A>750A>"
+    Value: "900A>900B>900C>900A>"
   AppearTime:
     Type: "System.Int32"
     Value: "87709"
@@ -19,7 +19,7 @@ Config:
       SmoothPropX3: "4"
   BackForeLayer:
     Type: "System.Boolean"
-    Value: "False"
+    Value: "True"
   CharacterLayer:
     Type: "System.Boolean"
     Value: "True"
@@ -97,13 +97,13 @@ Config:
     Value: "0.5"
   Ap_char:
     Type: "System.String"
-    Value: "sb/guyA/square.jpg"
+    Value: "sb/guyA/square.png"
   AcharFCount:
     Type: "System.Int32"
-    Value: "0"
+    Value: "1"
   AcharFDelay:
     Type: "System.Int32"
-    Value: "0"
+    Value: "150"
   AcharBlockPos:
     Type: "System.Int32"
     Value: "15"
@@ -145,13 +145,13 @@ Config:
     Value: "sb/etc/r.jpg"
   Ap_grass0:
     Type: "System.String"
-    Value: "sb/etc/r.jpg"
+    Value: "sb/etc/r2.jpg"
   Ap_grass1:
     Type: "System.String"
-    Value: "sb/etc/r.jpg"
+    Value: "sb/etc/r2.jpg"
   Ap_grass2:
     Type: "System.String"
-    Value: "sb/etc/r.jpg"
+    Value: "sb/etc/r2.jpg"
   Ap_dirt0:
     Type: "System.String"
     Value: "sb/etc/r.jpg"
@@ -202,10 +202,10 @@ Config:
     Value: "10"
   ASkyColor:
     Type: "OpenTK.Graphics.Color4"
-    Value: "0.003921569,0.003921569,0.003921569,0.003921569"
+    Value: "0.008861423,0.1272705,0,1"
   ASkyGColor:
     Type: "OpenTK.Graphics.Color4"
-    Value: "0,0,0,0.003921569"
+    Value: "0.3536236,0,1,0.003921569"
   AShadowColor:
     Type: "OpenTK.Graphics.Color4"
     Value: "0,0,0,0.003921569"
@@ -229,13 +229,13 @@ Config:
     Value: "sb/etc/r.jpg"
   Bp_grass0:
     Type: "System.String"
-    Value: "sb/etc/r.jpg"
+    Value: "sb/etc/r1.jpg"
   Bp_grass1:
     Type: "System.String"
-    Value: "sb/etc/r.jpg"
+    Value: "sb/etc/r1.jpg"
   Bp_grass2:
     Type: "System.String"
-    Value: "sb/etc/r.jpg"
+    Value: "sb/etc/r1.jpg"
   Bp_dirt0:
     Type: "System.String"
     Value: "sb/etc/r.jpg"
@@ -271,7 +271,7 @@ Config:
     Value: "6"
   BHeightGeneration:
     Type: "System.Int32"
-    Value: "14"
+    Value: "5"
   BToRandom:
     Type: "System.Int32"
     Value: "1500"
@@ -286,7 +286,7 @@ Config:
     Value: "10"
   BSkyColor:
     Type: "OpenTK.Graphics.Color4"
-    Value: "0.003921569,0.003921569,0.003921569,0.003921569"
+    Value: "0.1646664,0,0,0.003921569"
   BSkyGColor:
     Type: "OpenTK.Graphics.Color4"
     Value: "0,0,0,0.003921569"
@@ -355,7 +355,7 @@ Config:
     Value: "6"
   CHeightGeneration:
     Type: "System.Int32"
-    Value: "14"
+    Value: "5"
   CToRandom:
     Type: "System.Int32"
     Value: "1500"
@@ -370,7 +370,7 @@ Config:
     Value: "10"
   CSkyColor:
     Type: "OpenTK.Graphics.Color4"
-    Value: "0.003921569,0.003921569,0.003921569,0.003921569"
+    Value: "0.2431976,0.2431976,0.2431976,0.003921569"
   CSkyGColor:
     Type: "OpenTK.Graphics.Color4"
     Value: "0,0,0,0.003921569"
@@ -388,18 +388,38 @@ Config:
     Value: "0"
     DisplayName: "Random seed"
 Layers:
+  a63c7c2ccd98498188346d897254549d:
+    Name: "SkyLayer"
+    OsbLayer: Background
+    DiffSpecific: No
+    Visible: Yes
+  72e32151c7814b0189ec2fe33396a406:
+    Name: "BackgroundLayer"
+    OsbLayer: Background
+    DiffSpecific: No
+    Visible: No
+  a7d7ad4d5337418db266a5a021e7a54a:
+    Name: "ForegroundLayer"
+    OsbLayer: Background
+    DiffSpecific: No
+    Visible: No
+  a091bc2052b34b9db660baec38bcd9b4:
+    Name: "RainLayer"
+    OsbLayer: Background
+    DiffSpecific: No
+    Visible: No
   e8bb4506676a4d8fae69263d2fedb58f:
     Name: "GrassLayer"
-    OsbLayer: Background
+    OsbLayer: Foreground
     DiffSpecific: No
     Visible: Yes
   1b45bac8a55a477782fcec6d86ee5d1b:
     Name: "DirtLayer"
-    OsbLayer: Background
+    OsbLayer: Foreground
     DiffSpecific: No
     Visible: No
   8d612ae242cb4ed89460856aa766c259:
     Name: "CharacterLayer"
-    OsbLayer: Background
+    OsbLayer: Foreground
     DiffSpecific: No
     Visible: Yes

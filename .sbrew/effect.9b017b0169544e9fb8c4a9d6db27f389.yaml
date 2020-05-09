@@ -22,3 +22,13 @@ Layers:
     OsbLayer: Background
     DiffSpecific: No
     Visible: Yes
+  27b3deeda528493a959ee683e5521aed:
+    Name: "fg"
+    OsbLayer: Foreground
+    DiffSpecific: No
+    Visible: Yes
+  a65ce66d3c18481ab6cab525e1ceeaa6:
+    Name: "vig"
+    OsbLayer: Overlay
+    DiffSpecific: No
+    Visible: Yes

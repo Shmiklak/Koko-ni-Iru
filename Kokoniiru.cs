@@ -21,6 +21,9 @@ namespace StorybrewScripts
             fuckingBell();
 		    getRidOfBackground();
             background();
+            dim(87233, 87709);
+            dim(115328, 118185);
+            dim(119614, 120090);
         }
 
         public void getRidOfBackground() {
@@ -33,7 +36,6 @@ namespace StorybrewScripts
             var bg = GetLayer("bg").CreateSprite("sb/etc/p.png", OsbOrigin.Centre);
             bg.Scale(19138, 1000);
             bg.Fade(19138, 21042, 0, 1);
-            bg.Fade(230566, 234376, 1, 0);
             //Gray
             bg.ColorHsb(19138, 0, 0, 0.35);
             //Purple
@@ -45,15 +47,21 @@ namespace StorybrewScripts
             //Blue
             bg.Color(80090, 81042, 0, 0, 0.1, 0, 0.3, 0.5);
 
-            bg.Color(120090, 121995, 0, 0.3, 0.5, 0.1, 0.1, 0.1);
 
-            bg.Color(135328, 0.5, 0.2, 0.4);
+            var bg2 = GetLayer("bg").CreateSprite("sb/etc/p.png", OsbOrigin.Centre);
+            bg2.Scale(120090, 1000);
+            bg2.Fade(120090, 1);
+            bg2.Color(120090, 0.1, 0.1, 0.1);
 
-            bg.Color(165804, 166757,  0.5, 0.2, 0.4, 0, 0, 0.1);
+            bg2.Color(135328, 0.5, 0.2, 0.4);
 
-            bg.Color(192471, 193423, 0, 0, 0.1, 0.7, 0.4, 0.3);
+            bg2.Color(165804, 166757,  0.5, 0.2, 0.4, 0, 0, 0.1);
 
-            var overlay = GetLayer("bg").CreateSprite("sb/etc/vig.png", OsbOrigin.Centre);
+            bg2.Color(192471, 193423, 0, 0, 0.1, 0.7, 0.4, 0.3);
+
+            bg2.Fade(230566, 234376, 1, 0);
+
+            var overlay = GetLayer("vig").CreateSprite("sb/etc/vig.png", OsbOrigin.Centre);
             overlay.Fade(19138, 21042, 0, 1);
             overlay.Fade(230566, 234376, 1, 0);
             overlay.Scale(19138, 0.45);
@@ -75,6 +83,18 @@ namespace StorybrewScripts
             var noise = GetLayer("noise").CreateAnimation("sb/noise/static_.jpg", 4, 100, OsbLoopType.LoopForever, OsbOrigin.Centre);
             noise.Fade(90, 1995, 0, 0.6);
             noise.Fade(15328, 17233, 0.6, 0);
+        }
+
+        public void kiai(int startTime, int endTime) {
+
+        }
+
+        public void dim(int startTime, int endTime) {
+            var bg = GetLayer("fg").CreateSprite("sb/etc/p.png", OsbOrigin.Centre);
+            bg.Scale(startTime, 1000);
+            bg.Fade(startTime, endTime, 0, 1);
+            bg.Fade(endTime, endTime + beat * 2, 1, 0);
+            bg.Color(startTime, 0, 0, 0);
         }
     }
 }

@@ -653,17 +653,17 @@ namespace StorybrewScripts
             spriteSky.ScaleVec(StartTime, StartTime, (float)854/bitmapSky.Width, (float)480/bitmapSky.Height, (float)854/bitmapSky.Width, (float)480/bitmapSky.Height);
             
             //SkyGradient
-            var bitmapSkyGradient = GetMapsetBitmap(p_shadow);
-            var spriteSkyGradient = layerSky.CreateSprite(p_shadow, OsbOrigin.Centre);
+            // var bitmapSkyGradient = GetMapsetBitmap(p_shadow);
+            // var spriteSkyGradient = layerSky.CreateSprite(p_shadow, OsbOrigin.Centre);
 
-            spriteSkyGradient.Move(StartTime, AppearTime + (((EndTime*HSpriteVisible)/Math.Abs(shift) * addB)*countS), 320, 240, 320, 240);
-            if(countS == 1)
-                spriteSkyGradient.Color(StartTime, StartTime, SkyGColor, SkyGColor);
-            else {
-                spriteSkyGradient.Color(StartTime, StartTime + (EndTime + Math.Abs(shift))/2, PrevSkyGColor, SkyGColor);
-                spriteSkyGradient.Color(StartTime + (EndTime + Math.Abs(shift))/2, AppearTime + (((EndTime*HSpriteVisible)/Math.Abs(shift) * addB)*countS), SkyGColor, SkyGColor);
-            }
-            spriteSkyGradient.ScaleVec(StartTime, StartTime, (float)854/bitmapSkyGradient.Width, (float)480/bitmapSkyGradient.Height, (float)854/bitmapSkyGradient.Width, (float)480/bitmapSkyGradient.Height);
+            // spriteSkyGradient.Move(StartTime, AppearTime + (((EndTime*HSpriteVisible)/Math.Abs(shift) * addB)*countS), 320, 240, 320, 240);
+            // if(countS == 1)
+            //     spriteSkyGradient.Color(StartTime, StartTime, SkyGColor, SkyGColor);
+            // else {
+            //     spriteSkyGradient.Color(StartTime, StartTime + (EndTime + Math.Abs(shift))/2, PrevSkyGColor, SkyGColor);
+            //     spriteSkyGradient.Color(StartTime + (EndTime + Math.Abs(shift))/2, AppearTime + (((EndTime*HSpriteVisible)/Math.Abs(shift) * addB)*countS), SkyGColor, SkyGColor);
+            // }
+            // spriteSkyGradient.ScaleVec(StartTime, StartTime, (float)854/bitmapSkyGradient.Width, (float)480/bitmapSkyGradient.Height, (float)854/bitmapSkyGradient.Width, (float)480/bitmapSkyGradient.Height);
             
             //Clouds
             if(clouds)
