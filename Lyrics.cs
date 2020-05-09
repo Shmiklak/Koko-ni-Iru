@@ -184,7 +184,7 @@ namespace StorybrewScripts
                             sprite.Fade(subtitleLine.EndTime - 200, subtitleLine.EndTime, 1, 0);
                             sprite.Scale(subtitleLine.EndTime - 200, subtitleLine.EndTime, FontScale, 0); 
                             if (additive) sprite.Additive(subtitleLine.StartTime - 200, subtitleLine.EndTime);
-                            i += 50; 
+                            i += 100; 
                         }
                         letterX += texture.BaseWidth * FontScale;
                     }

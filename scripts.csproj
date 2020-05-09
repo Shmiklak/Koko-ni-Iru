@@ -57,6 +57,7 @@
     <Compile Include="Kokoniiru.cs" />
     <Compile Include="Lyrics.cs" />
     <Compile Include="Particles.cs" />
+    <Compile Include="Squares.cs" />
   </ItemGroup>
   <ItemGroup />
 </Project>

@@ -19,10 +19,10 @@ Config:
     Value: "0.5"
   FontColor:
     Type: "OpenTK.Graphics.Color4"
-    Value: "1,1,1,0.8003955"
+    Value: "1,1,1,0.7517809"
   FontStyle:
     Type: "System.Int32"
-    Value: "0"
+    Value: "1"
     AllowedValues:
       Regular: "0"
       Bold: "1"
@@ -31,13 +31,13 @@ Config:
       Strikeout: "8"
   GlowRadius:
     Type: "System.Int32"
-    Value: "0"
+    Value: "30"
   GlowColor:
     Type: "OpenTK.Graphics.Color4"
-    Value: "1,1,1,0"
+    Value: "0.5311456,0.5311456,0.5311456,0"
   AdditiveGlow:
     Type: "System.Boolean"
-    Value: "True"
+    Value: "False"
   OutlineThickness:
     Type: "System.Int32"
     Value: "0"
@@ -55,7 +55,7 @@ Config:
     Value: "0,0"
   SubtitleY:
     Type: "System.Single"
-    Value: "200"
+    Value: "220"
   PerCharacter:
     Type: "System.Boolean"
     Value: "True"

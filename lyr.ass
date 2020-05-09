@@ -8,7 +8,7 @@ ScaledBorderAndShadow: yes
 YCbCr Matrix: None
 
 [Aegisub Project Garbage]
-Active Line: 2
+Active Line: 19
 
 [V4+ Styles]
 Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
@@ -19,3 +19,20 @@ Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
 Dialogue: 0,0:00:26.75,0:00:33.89,Default,,0,0,0,,輝いた世界\N いつの間にか迷子になって
 Dialogue: 0,0:00:34.85,0:00:41.28,Default,,0,0,0,,自分のことさえも\N わからなくなっていたんだ
 Dialogue: 0,0:00:42.47,0:00:49.61,Default,,0,0,0,,思い出して\N心走り出したあの気持ち
+Dialogue: 0,0:00:49.85,0:00:57.23,Default,,0,0,0,,未来は誰のものでもなく\Nこの手の中に
+Dialogue: 0,0:00:57.70,0:01:04.85,Default,,0,0,0,,壊して また作って\N何度も生まれ変わっていく
+Dialogue: 0,0:01:05.32,0:01:12.47,Default,,0,0,0,,地図に記されてない道を\Nひとり探している
+Dialogue: 0,0:01:14.61,0:01:20.09,Default,,0,0,0,,逃げつづけて\N誰かのせいにして
+Dialogue: 0,0:01:21.51,0:01:27.33,Default,,0,0,0,,諦めるだけなんて\Nもうやめよう
+Dialogue: 0,0:02:15.56,0:02:22.47,Default,,0,0,0,,笑われたって\N最後のひとりになってもいいさ
+Dialogue: 0,0:02:23.18,0:02:30.09,Default,,0,0,0,,誰も知らない\Nまだ見たことのない星の色
+Dialogue: 0,0:02:30.56,0:02:38.18,Default,,0,0,0,,信じたいのさ\N映画のようにはいかないけれど
+Dialogue: 0,0:02:38.42,0:02:45.80,Default,,0,0,0,,子供のころの僕が\N目の前を駆けていくんだ
+Dialogue: 0,0:02:46.28,0:02:53.42,Default,,0,0,0,,あと少しだけでいい\N眠ることも忘れるような
+Dialogue: 0,0:02:53.89,0:03:01.04,Default,,0,0,0,,空想を超えていくような\Nほんの少しの光を 今
+Dialogue: 0,0:03:06.99,0:03:12.47,Default,,0,0,0,,泣きつづけて\N立ち止まったままで
+Dialogue: 0,0:03:13.89,0:03:19.61,Default,,0,0,0,,見送ってきた自分を\N終わらせよう
+Dialogue: 0,0:03:54.61,0:04:00.56,Default,,0,0,0,,追いつづけて\Nはじめて見える世界
+Dialogue: 0,0:04:01.51,0:04:07.70,Default,,0,0,0,,諦めない僕が\Nそう ここにいる
+Dialogue: 0,0:02:00.09,0:02:07.70,Default,,0,0,0,,Storyboard by Shmiklak and PantyDev
+Dialogue: 0,0:02:07.70,0:02:13.42,Default,,0,0,0,,Beatmap by Gero

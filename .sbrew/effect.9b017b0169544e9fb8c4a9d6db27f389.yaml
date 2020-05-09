@@ -17,3 +17,8 @@ Layers:
     OsbLayer: Background
     DiffSpecific: No
     Visible: Yes
+  b055dc4e3bdd4d00ada1e6ef9f1e2e8d:
+    Name: "bell"
+    OsbLayer: Background
+    DiffSpecific: No
+    Visible: Yes

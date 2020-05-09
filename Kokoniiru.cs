@@ -35,7 +35,9 @@ namespace StorybrewScripts
             bg.Fade(19138, 21042, 0, 1);
             bg.Fade(230566, 234376, 1, 0);
             bg.ColorHsb(19138, 0, 0, 0.35);
-
+            bg.Color(26042, 0.4, 0.3, 0.7);
+            bg.Color(26280, 27709, 1, 1, 1, 0.1, 0.5, 0.2);
+            bg.Color(57233, 58185, 0.1, 0.5, 0.2, 0, 0, 0.1);
 
             var overlay = GetLayer("bg").CreateSprite("sb/etc/vig.png", OsbOrigin.Centre);
             overlay.Fade(19138, 21042, 0, 1);
@@ -44,11 +46,15 @@ namespace StorybrewScripts
         }
 
         public void fuckingBell() {
-            var bell = GetLayer("bell").CreateSprite("sb/etc/bell.png", OsbOrigin.TopCentre);
-            bell.StartLoopGroup(0, 10);
-            bell.Rotate(0, beat, 0, Math.PI);
-            bell.Rotate(beat, beat * 2, Math.PI, -Math.PI);
+            var position = new Vector2(320, 150);
+            var bell = GetLayer("bell").CreateSprite("sb/etc/bell.png", OsbOrigin.TopCentre, position);
+            bell.Fade(19138, 21042, 0, 1);
+            bell.Scale(19138, 0.25);
+            bell.StartLoopGroup(19138, 4);
+            bell.Rotate(OsbEasing.InCubic, 0, beat * 2, -Math.PI / 2.5, Math.PI / 2.5);
+            bell.Rotate(OsbEasing.InCubic, beat * 2, beat * 4, Math.PI / 2.5, -Math.PI / 2.5);
             bell.EndGroup();
+            bell.Fade(26280, 0);
         }
 
         public void intro() {
