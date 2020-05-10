@@ -1,0 +1,425 @@
+﻿FormatVersion: 6
+Name: "Geometry 2"
+Script: "Geometry"
+Config:
+  Story:
+    Type: "System.String"
+    Value: "900A>900B>900C>900A>"
+  AppearTime:
+    Type: "System.Int32"
+    Value: "200090"
+  Smoothed:
+    Type: "System.Int32"
+    Value: "0"
+    AllowedValues:
+      Off: "0"
+      SmoothX2: "1"
+      SmoothX3: "2"
+      SmoothPropX2: "3"
+      SmoothPropX3: "4"
+  BackForeLayer:
+    Type: "System.Boolean"
+    Value: "True"
+  CharacterLayer:
+    Type: "System.Boolean"
+    Value: "True"
+  PlantsLayer:
+    Type: "System.Boolean"
+    Value: "False"
+  GrassLayer:
+    Type: "System.Boolean"
+    Value: "True"
+  DirtLayer:
+    Type: "System.Boolean"
+    Value: "True"
+  ShadowLayer:
+    Type: "System.Boolean"
+    Value: "False"
+  FromCorner:
+    Type: "System.Boolean"
+    Value: "False"
+  TotalHeight:
+    Type: "System.Int32"
+    Value: "20"
+  AddBlocks:
+    Type: "System.Int32"
+    Value: "154"
+  HSpriteVisible:
+    Type: "System.Int32"
+    Value: "14"
+  shift:
+    Type: "System.Int32"
+    Value: "-280"
+  backAddHigh:
+    Type: "System.Int32"
+    Value: "15"
+  backShift:
+    Type: "System.Int32"
+    Value: "100"
+  foreShift:
+    Type: "System.Int32"
+    Value: "300"
+  clouds:
+    Type: "System.Boolean"
+    Value: "False"
+  p_cloud0:
+    Type: "System.String"
+    Value: "sb/etc/r.jpg"
+  p_cloud1:
+    Type: "System.String"
+    Value: "sb/etc/r.jpg"
+  p_cloud2:
+    Type: "System.String"
+    Value: "sb/etc/r.jpg"
+  cloudCount:
+    Type: "System.Int32"
+    Value: "50"
+  cloudExistTimeMax:
+    Type: "System.Int32"
+    Value: "15000"
+  cloudRandomAddTime:
+    Type: "System.Int32"
+    Value: "4000"
+  cloudSizeMax:
+    Type: "System.Single"
+    Value: "0.5"
+  cloudFadeMax:
+    Type: "System.Single"
+    Value: "0.7"
+  foreCloudY:
+    Type: "OpenTK.Vector2"
+    Value: "0,100"
+  backCloudY:
+    Type: "OpenTK.Vector2"
+    Value: "100,300"
+  charSize:
+    Type: "System.Double"
+    Value: "0.5"
+  Ap_char:
+    Type: "System.String"
+    Value: "sb/guyA/square.png"
+  AcharFCount:
+    Type: "System.Int32"
+    Value: "1"
+  AcharFDelay:
+    Type: "System.Int32"
+    Value: "150"
+  AcharBlockPos:
+    Type: "System.Int32"
+    Value: "15"
+  Bp_char:
+    Type: "System.String"
+    Value: ""
+  BcharFCount:
+    Type: "System.Int32"
+    Value: "0"
+  BcharFDelay:
+    Type: "System.Int32"
+    Value: "0"
+  BcharBlockPos:
+    Type: "System.Int32"
+    Value: "31"
+  Cp_char:
+    Type: "System.String"
+    Value: ""
+  CcharFCount:
+    Type: "System.Int32"
+    Value: "0"
+  CcharFDelay:
+    Type: "System.Int32"
+    Value: "0"
+  CcharBlockPos:
+    Type: "System.Int32"
+    Value: "31"
+  Ap_sky:
+    Type: "System.String"
+    Value: "sb/etc/r.jpg"
+  Ap_back:
+    Type: "System.String"
+    Value: "sb/etc/r.jpg"
+  Ap_fore:
+    Type: "System.String"
+    Value: "sb/etc/r.jpg"
+  Ap_rain:
+    Type: "System.String"
+    Value: "sb/etc/r.jpg"
+  Ap_grass0:
+    Type: "System.String"
+    Value: "sb/etc/r2.jpg"
+  Ap_grass1:
+    Type: "System.String"
+    Value: "sb/etc/r2.jpg"
+  Ap_grass2:
+    Type: "System.String"
+    Value: "sb/etc/r2.jpg"
+  Ap_dirt0:
+    Type: "System.String"
+    Value: "sb/etc/r.jpg"
+  Ap_dirt1:
+    Type: "System.String"
+    Value: "sb/etc/r.jpg"
+  Ap_dirt2:
+    Type: "System.String"
+    Value: "sb/etc/r.jpg"
+  Ap_tree0:
+    Type: "System.String"
+    Value: "sb/etc/r.jpg"
+  Ap_tree1:
+    Type: "System.String"
+    Value: "sb/etc/r.jpg"
+  Ap_tree2:
+    Type: "System.String"
+    Value: "sb/etc/r.jpg"
+  Ap_plant0:
+    Type: "System.String"
+    Value: "sb/etc/r.jpg"
+  Ap_plant1:
+    Type: "System.String"
+    Value: "sb/etc/r.jpg"
+  Ap_plant2:
+    Type: "System.String"
+    Value: "sb/etc/r.jpg"
+  Ap_shadow:
+    Type: "System.String"
+    Value: "sb/etc/r.jpg"
+  ASectorChangeHeight:
+    Type: "System.Int32"
+    Value: "6"
+  AHeightGeneration:
+    Type: "System.Int32"
+    Value: "5"
+  AToRandom:
+    Type: "System.Int32"
+    Value: "1500"
+  ASolidLayers:
+    Type: "System.Int32"
+    Value: "5"
+  APlantGeneration:
+    Type: "System.Int32"
+    Value: "6"
+  ADistBetweenPlants:
+    Type: "System.Int32"
+    Value: "10"
+  ASkyColor:
+    Type: "OpenTK.Graphics.Color4"
+    Value: "0.007843138,0.1254902,0,1"
+  ASkyGColor:
+    Type: "OpenTK.Graphics.Color4"
+    Value: "0.3529412,0,1,0.003921569"
+  AShadowColor:
+    Type: "OpenTK.Graphics.Color4"
+    Value: "0,0,0,0.003921569"
+  ADropCount:
+    Type: "System.Int32"
+    Value: "350"
+  ADropExistTime:
+    Type: "System.Int32"
+    Value: "200"
+  Bp_sky:
+    Type: "System.String"
+    Value: "sb/etc/r.jpg"
+  Bp_back:
+    Type: "System.String"
+    Value: "sb/etc/r.jpg"
+  Bp_fore:
+    Type: "System.String"
+    Value: "sb/etc/r.jpg"
+  Bp_rain:
+    Type: "System.String"
+    Value: "sb/etc/r.jpg"
+  Bp_grass0:
+    Type: "System.String"
+    Value: "sb/etc/r1.jpg"
+  Bp_grass1:
+    Type: "System.String"
+    Value: "sb/etc/r1.jpg"
+  Bp_grass2:
+    Type: "System.String"
+    Value: "sb/etc/r1.jpg"
+  Bp_dirt0:
+    Type: "System.String"
+    Value: "sb/etc/r.jpg"
+  Bp_dirt1:
+    Type: "System.String"
+    Value: "sb/etc/r.jpg"
+  Bp_dirt2:
+    Type: "System.String"
+    Value: "sb/etc/r.jpg"
+  Bp_tree0:
+    Type: "System.String"
+    Value: "sb/etc/r.jpg"
+  Bp_tree1:
+    Type: "System.String"
+    Value: "sb/etc/r.jpg"
+  Bp_tree2:
+    Type: "System.String"
+    Value: "sb/etc/r.jpg"
+  Bp_plant0:
+    Type: "System.String"
+    Value: "sb/etc/r.jpg"
+  Bp_plant1:
+    Type: "System.String"
+    Value: "sb/etc/r.jpg"
+  Bp_plant2:
+    Type: "System.String"
+    Value: "sb/etc/r.jpg"
+  Bp_shadow:
+    Type: "System.String"
+    Value: "sb/etc/r.jpg"
+  BSectorChangeHeight:
+    Type: "System.Int32"
+    Value: "6"
+  BHeightGeneration:
+    Type: "System.Int32"
+    Value: "5"
+  BToRandom:
+    Type: "System.Int32"
+    Value: "1500"
+  BSolidLayers:
+    Type: "System.Int32"
+    Value: "5"
+  BPlantGeneration:
+    Type: "System.Int32"
+    Value: "6"
+  BDistBetweenPlants:
+    Type: "System.Int32"
+    Value: "10"
+  BSkyColor:
+    Type: "OpenTK.Graphics.Color4"
+    Value: "0.1607843,0,0,0.003921569"
+  BSkyGColor:
+    Type: "OpenTK.Graphics.Color4"
+    Value: "0,0,0,0.003921569"
+  BShadowColor:
+    Type: "OpenTK.Graphics.Color4"
+    Value: "0,0,0,0.003921569"
+  BDropCount:
+    Type: "System.Int32"
+    Value: "350"
+  BDropExistTime:
+    Type: "System.Int32"
+    Value: "200"
+  Cp_sky:
+    Type: "System.String"
+    Value: "sb/etc/r.jpg"
+  Cp_back:
+    Type: "System.String"
+    Value: "sb/etc/r.jpg"
+  Cp_fore:
+    Type: "System.String"
+    Value: "sb/etc/r.jpg"
+  Cp_rain:
+    Type: "System.String"
+    Value: "sb/etc/r.jpg"
+  Cp_grass0:
+    Type: "System.String"
+    Value: "sb/etc/r.jpg"
+  Cp_grass1:
+    Type: "System.String"
+    Value: "sb/etc/r.jpg"
+  Cp_grass2:
+    Type: "System.String"
+    Value: "sb/etc/r.jpg"
+  Cp_dirt0:
+    Type: "System.String"
+    Value: "sb/etc/r.jpg"
+  Cp_dirt1:
+    Type: "System.String"
+    Value: "sb/etc/r.jpg"
+  Cp_dirt2:
+    Type: "System.String"
+    Value: "sb/etc/r.jpg"
+  Cp_tree0:
+    Type: "System.String"
+    Value: "sb/etc/r.jpg"
+  Cp_tree1:
+    Type: "System.String"
+    Value: "sb/etc/r.jpg"
+  Cp_tree2:
+    Type: "System.String"
+    Value: "sb/etc/r.jpg"
+  Cp_plant0:
+    Type: "System.String"
+    Value: "sb/etc/r.jpg"
+  Cp_plant1:
+    Type: "System.String"
+    Value: "sb/etc/r.jpg"
+  Cp_plant2:
+    Type: "System.String"
+    Value: "sb/etc/r.jpg"
+  Cp_shadow:
+    Type: "System.String"
+    Value: "sb/etc/r.jpg"
+  CSectorChangeHeight:
+    Type: "System.Int32"
+    Value: "6"
+  CHeightGeneration:
+    Type: "System.Int32"
+    Value: "5"
+  CToRandom:
+    Type: "System.Int32"
+    Value: "1500"
+  CSolidLayers:
+    Type: "System.Int32"
+    Value: "5"
+  CPlantGeneration:
+    Type: "System.Int32"
+    Value: "6"
+  CDistBetweenPlants:
+    Type: "System.Int32"
+    Value: "10"
+  CSkyColor:
+    Type: "OpenTK.Graphics.Color4"
+    Value: "0.2431373,0.2431373,0.2431373,0.003921569"
+  CSkyGColor:
+    Type: "OpenTK.Graphics.Color4"
+    Value: "0,0,0,0.003921569"
+  CShadowColor:
+    Type: "OpenTK.Graphics.Color4"
+    Value: "0,0,0,0.003921569"
+  CDropCount:
+    Type: "System.Int32"
+    Value: "350"
+  CDropExistTime:
+    Type: "System.Int32"
+    Value: "200"
+  RandomSeed:
+    Type: "System.Int32"
+    Value: "69"
+    DisplayName: "Random seed"
+Layers:
+  dfa205f1cff646c692201c6548f01bcc:
+    Name: "BackgroundLayer"
+    OsbLayer: Background
+    DiffSpecific: No
+    Visible: No
+  ea0c07bf85084fa39026795a1935e6d2:
+    Name: "ForegroundLayer"
+    OsbLayer: Background
+    DiffSpecific: No
+    Visible: No
+  9e2126b428344c96a171be76d98f9885:
+    Name: "RainLayer"
+    OsbLayer: Background
+    DiffSpecific: No
+    Visible: No
+  ccedc229c43049ec88f21782afce2b67:
+    Name: "DirtLayer"
+    OsbLayer: Background
+    DiffSpecific: No
+    Visible: No
+  9c82a25c630a4e458697a2e863a10903:
+    Name: "SkyLayer"
+    OsbLayer: Background
+    DiffSpecific: No
+    Visible: Yes
+  1dbb82237f274d949eaa098abfe50e91:
+    Name: "GrassLayer"
+    OsbLayer: Foreground
+    DiffSpecific: No
+    Visible: Yes
+  a54f6e24beb74b65a843493b601ee9ff:
+    Name: "CharacterLayer"
+    OsbLayer: Foreground
+    DiffSpecific: No
+    Visible: Yes

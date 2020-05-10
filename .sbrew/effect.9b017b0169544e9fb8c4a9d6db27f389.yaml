@@ -29,6 +29,6 @@ Layers:
     Visible: Yes
   a65ce66d3c18481ab6cab525e1ceeaa6:
     Name: "vig"
-    OsbLayer: Overlay
+    OsbLayer: Foreground
     DiffSpecific: No
     Visible: Yes

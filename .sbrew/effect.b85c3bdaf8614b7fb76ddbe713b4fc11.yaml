@@ -1,5 +1,5 @@
 ﻿FormatVersion: 6
-Name: "Squares 3"
+Name: "Squares 4"
 Script: "Squares"
 Config:
   Path:
@@ -7,10 +7,10 @@ Config:
     Value: "sb/etc/p.png"
   StartTime:
     Type: "System.Int32"
-    Value: "87709"
+    Value: "200090"
   EndTime:
     Type: "System.Int32"
-    Value: "118185"
+    Value: "230566"
   ParticleDuration:
     Type: "System.Double"
     Value: "1904"
@@ -116,10 +116,10 @@ Config:
     Value: "True"
   RandomSeed:
     Type: "System.Int32"
-    Value: "6546"
+    Value: "8797"
     DisplayName: "Random seed"
 Layers:
-  3152db5bac424ee89358070868e61da2:
+  51d3f35616db46a8a632af2b2bd13487:
     Name: ""
     OsbLayer: Background
     DiffSpecific: No

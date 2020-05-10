@@ -651,6 +651,9 @@ namespace StorybrewScripts
                 spriteSky.Color(StartTime + (EndTime + Math.Abs(shift))/2, AppearTime + (((EndTime*HSpriteVisible)/Math.Abs(shift) * addB)*countS), SkyColor, SkyColor);
             }
             spriteSky.ScaleVec(StartTime, StartTime, (float)854/bitmapSky.Width, (float)480/bitmapSky.Height, (float)854/bitmapSky.Width, (float)480/bitmapSky.Height);
+
+            if(countS == 4)
+                spriteSky.Fade(AppearTime + (((EndTime*HSpriteVisible)/Math.Abs(shift) * addB)*countS), AppearTime + (((EndTime*HSpriteVisible)/Math.Abs(shift) * addB)*countS) + 2000, 1, 0);
             
             //SkyGradient
             // var bitmapSkyGradient = GetMapsetBitmap(p_shadow);
