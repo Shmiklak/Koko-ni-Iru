@@ -120,14 +120,7 @@ namespace StorybrewScripts
 
                 if (Additive)
                     sprite.Additive(startTime, endTime);
-
-                // int loopCount = (57233 - 26757) / (10 * 476 / 8);
-
-                sprite.StartLoopGroup(startTime, 6);
-                sprite.Rotate(0, 0);
-                sprite.Rotate(376, 476, 0, Math.PI / 4);
-                sprite.Rotate(852, 952, Math.PI / 4, Math.PI / 2);
-                sprite.EndGroup();
+                
             }))
             {
                 pool.MaxPoolDuration = 0;
@@ -145,6 +138,26 @@ namespace StorybrewScripts
                     // Sprites must also be created in order (startTime keeps increasing in each loop iteration),
                     // or sprites won't be properly reused.
                     var sprite = pool.Get(startTime, endTime);
+
+                    var timingPoint = Beatmap.GetTimingPointAt((int)startTime);
+                    var nextBeatTime = timingPoint.Offset;
+                    var beatDuration = timingPoint.BeatDuration;
+
+                    while (nextBeatTime < startTime - beatDuration)
+                        nextBeatTime += beatDuration;
+
+                    double initialRotation = 0;
+                    int whiteTickNumber = (int)Math.Round((nextBeatTime - timingPoint.Offset) / beatDuration);
+
+                    Log($"whitetick:{whiteTickNumber}, startTime: {nextBeatTime}");
+                    if (whiteTickNumber % 2 > 0)
+                        initialRotation = Math.PI / 4;
+
+                    sprite.StartLoopGroup(nextBeatTime, (int)Math.Ceiling((endTime - nextBeatTime) / 952));
+                    sprite.Rotate(0, initialRotation);
+                    sprite.Rotate(376, 476, initialRotation, initialRotation + Math.PI / 4);  
+                    sprite.Rotate(852, 952, initialRotation + Math.PI / 4, initialRotation + Math.PI / 2);
+                    sprite.EndGroup();
 
                     var easing = RandomEasing ? (OsbEasing)Random(1, 3) : Easing;
 
