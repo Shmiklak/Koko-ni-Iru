@@ -123,13 +123,14 @@ namespace StorybrewScripts
 
                 // int loopCount = (57233 - 26757) / (10 * 476 / 8);
 
-                sprite.StartLoopGroup(StartTime, 32);
+                sprite.StartLoopGroup(startTime, 6);
                 sprite.Rotate(0, 0);
                 sprite.Rotate(376, 476, 0, Math.PI / 4);
                 sprite.Rotate(852, 952, Math.PI / 4, Math.PI / 2);
                 sprite.EndGroup();
             }))
             {
+                pool.MaxPoolDuration = 0;
                 var timeStep = particleDuration / ParticleAmount;
                 for (var startTime = (double)StartTime; startTime <= EndTime - particleDuration; startTime += timeStep)
                 {

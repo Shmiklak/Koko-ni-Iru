@@ -97,7 +97,7 @@ Config:
     Value: "0.5"
   Ap_char:
     Type: "System.String"
-    Value: "sb/guyA/square.png"
+    Value: "sb/guyA/square0.png"
   AcharFCount:
     Type: "System.Int32"
     Value: "1"

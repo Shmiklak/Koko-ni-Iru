@@ -893,7 +893,7 @@ namespace StorybrewScripts
             
             if(dir == "left")
             {
-                var spriteChar = layer.CreateAnimation(p_char, charFCount, charFDelay, OsbLoopType.LoopForever, OsbOrigin.BottomLeft);
+                var spriteChar = layer.CreateSprite(p_char, OsbOrigin.BottomLeft);
                 int charX = (HSpriteVisible*charBlockPos) - 107 - HSpriteVisible;
                 for(int i = charBlockPos; i > 0; i--)
                 {
@@ -910,12 +910,15 @@ namespace StorybrewScripts
                     spriteChar.Move(lastBlockTime + (EndTime*HSpriteVisible)/Math.Abs(shift) * (((854/HSpriteVisible) + AddBlocks) - i), lastBlockTime + (EndTime*HSpriteVisible)/Math.Abs(shift) * (((854/HSpriteVisible) + AddBlocks) + 1 - i), charX, 480 - (BlockHeight[i] + 1)*(HSpriteVisible), charX, 480 - (BlockHeight[i-1] + 1)*(HSpriteVisible));
             }
             else {
-                var spriteChar = layer.CreateAnimation(p_char, charFCount, charFDelay, OsbLoopType.LoopForever, OsbOrigin.BottomRight);
+                var spriteChar = layer.CreateSprite(p_char, OsbOrigin.BottomRight);
                 int charX = (HSpriteVisible*charBlockPos) - 107 + HSpriteVisible;
                 for(int i = charBlockPos; i <= (854/HSpriteVisible); i++)
                 {
                     if(countS == 1)
-                        spriteChar.Move(StartTime + (EndTime*HSpriteVisible)/Math.Abs(shift) * (i - charBlockPos), StartTime + (EndTime*HSpriteVisible)/Math.Abs(shift) * (i + 1 - charBlockPos), charX, 480 - (BlockHeight[i] + 1)*(HSpriteVisible), charX, 480 - (BlockHeight[i+1] + 1)*(HSpriteVisible));
+                        if(BlockHeight[i] != BlockHeight[i+1])
+                            if(BlockHeight[i] > BlockHeight[i+1])
+                                spriteChar.Move(StartTime + (EndTime*HSpriteVisible)/Math.Abs(shift) * (i - charBlockPos) + 170, StartTime + (EndTime*HSpriteVisible)/Math.Abs(shift) * (i + 1 - charBlockPos) + 170, charX, 480 - (BlockHeight[i] + 1)*(HSpriteVisible), charX, 480 - (BlockHeight[i+1] + 1)*(HSpriteVisible));
+                            else spriteChar.Move(StartTime + (EndTime*HSpriteVisible)/Math.Abs(shift) * (i - charBlockPos), StartTime + (EndTime*HSpriteVisible)/Math.Abs(shift) * (i + 1 - charBlockPos), charX, 480 - (BlockHeight[i] + 1)*(HSpriteVisible), charX, 480 - (BlockHeight[i+1] + 1)*(HSpriteVisible));
                     if(i == (854/HSpriteVisible))
                         lastBlockTime = StartTime + (EndTime*HSpriteVisible)/Math.Abs(shift) * (i + 1 - charBlockPos) - (EndTime*HSpriteVisible)/Math.Abs(shift);
                 }
@@ -931,7 +934,10 @@ namespace StorybrewScripts
                 }
 
                 for(int i = (854/HSpriteVisible); i < ((854/HSpriteVisible) + AddBlocks); i++)
-                    spriteChar.Move(lastBlockTime + (EndTime*HSpriteVisible)/Math.Abs(shift) * (i - (854/HSpriteVisible)), lastBlockTime + (EndTime*HSpriteVisible)/Math.Abs(shift) * (i + 1 - (854/HSpriteVisible)), charX, 480 - (BlockHeight[i] + 1)*(HSpriteVisible), charX, 480 - (BlockHeight[i+1] + 1)*(HSpriteVisible));
+                    if(BlockHeight[i] != BlockHeight[i+1])
+                        if(BlockHeight[i] > BlockHeight[i+1])
+                            spriteChar.Move(lastBlockTime + (EndTime*HSpriteVisible)/Math.Abs(shift) * (i - (854/HSpriteVisible)) + 170, lastBlockTime + (EndTime*HSpriteVisible)/Math.Abs(shift) * (i + 1 - (854/HSpriteVisible)) + 170, charX, 480 - (BlockHeight[i] + 1)*(HSpriteVisible), charX, 480 - (BlockHeight[i+1] + 1)*(HSpriteVisible));
+                        else spriteChar.Move(lastBlockTime + (EndTime*HSpriteVisible)/Math.Abs(shift) * (i - (854/HSpriteVisible)), lastBlockTime + (EndTime*HSpriteVisible)/Math.Abs(shift) * (i + 1 - (854/HSpriteVisible)), charX, 480 - (BlockHeight[i] + 1)*(HSpriteVisible), charX, 480 - (BlockHeight[i+1] + 1)*(HSpriteVisible));
                 spriteChar.Move(lastBlockTime + (EndTime*HSpriteVisible)/Math.Abs(shift) * (((854/HSpriteVisible) + AddBlocks) - (854/HSpriteVisible)),  lastBlockTime + (EndTime*HSpriteVisible)/Math.Abs(shift) * (((854/HSpriteVisible) + AddBlocks) - (854/HSpriteVisible)) + (EndTime*HSpriteVisible)/Math.Abs(shift), charX, 480 - (BlockHeight[((854/HSpriteVisible) + AddBlocks)] + 1)*(HSpriteVisible), charX, 480 - (BlockHeight[((854/HSpriteVisible) + AddBlocks)] + 1)*(HSpriteVisible));
             }
         }
